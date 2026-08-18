@@ -1,78 +1,14 @@
 body {
-    margin: 0;
-    min-height: 100vh;
+    min-height: 915px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    perspective: 1000px;
-    background-color: #ffffff;
-    overflow: hidden;
+    gap: 15px;
 }
 
-.spin-text {
-    text-shadow: 2.5px 2.5px 0px #d0cfcf;
-    font-size: 3rem;
-    color: #000000;
-    font-family: 'Arimo', sans-serif;
-    transform-style: preserve-3d;
-    animation: drop-in-text 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards, 
-               spin-3d 3s 1.6s infinite ease-in-out;
-}
-
-.button {
-    box-shadow: 2.5px 2.5px 0px #d0cfcf;
-    font-size: 1.5rem;
-    color: #000000;
-    font-family: 'Arimo', sans-serif;
-    transform-style: preserve-3d;
-    animation: rise-in-button 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards, 
-               button-3d 3s 1.6s infinite ease-in-out;
-}
-
-@keyframes drop-in-text {
-    0% {
-        transform: translateY(-120vh) scaleX(1.00) scaleY(1.50) rotateY(0deg);
-        opacity: 0;
-    }
-    100% {  
-        transform: translateY(0) scaleX(1.00) scaleY(1.50) rotateY(25deg);
-        opacity: 1;
-    }
-}
-
-@keyframes rise-in-button {
-    0% {
-        transform: translateY(120vh) scaleX(1.00) scaleY(1.50) rotateY(0deg);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0) scaleX(1.00) scaleY(1.50) rotateY(5deg);
-        opacity: 1;
-    }
-}
-
-@keyframes spin-3d {
-    0% {
-        transform: scaleX(1.00) scaleY(1.50) rotateY(25deg);
-    }
-    50% {
-        transform: scaleX(1.50) scaleY(1.00) rotateY(-50deg);
-    }
-    100% {
-        transform: scaleX(1.00) scaleY(1.50) rotateY(25deg);
-    }
-}
-
-@keyframes button-3d {
-    0% {
-        transform: scaleX(1.00) scaleY(1.50) rotateY(-6deg);
-    }
-    50% {
-        transform: scaleX(1.50) scaleY(1.00) rotateY(12deg);
-    }
-    100% {
-        transform: scaleX(1.00) scaleY(1.50) rotateY(-6deg);
-    }
+.box {
+    font-size: 50px;
+    width: 300px;
+    height: 200px;
+    background-color: brown;
 }
