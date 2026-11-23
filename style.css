@@ -1,14 +1,13 @@
-body {
-    min-height: 915px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+.header {
+    font-family: 'Arial';
+    filter: drop-shadow(1.85px 1.85px 0 #00000020);
 }
 
-.box {
-    font-size: 50px;
-    width: 300px;
-    height: 200px;
-    background-color: brown;
+.paragraph {
+    font-family: 'Arial';
+    filter: drop-shadow(1.15px 1.15px 0 #00000020);
+}
+
+.img {
+    filter: drop-shadow(2.25px 2.25px 0 #00000020);
 }
