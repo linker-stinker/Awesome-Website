@@ -1,13 +1,39 @@
-.header {
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.text h1 {
     font-family: 'Arial';
     filter: drop-shadow(1.85px 1.85px 0 #00000020);
 }
 
-.paragraph {
+.text p {
     font-family: 'Arial';
     filter: drop-shadow(1.15px 1.15px 0 #00000020);
+    width: 250px;
 }
 
 .img {
     filter: drop-shadow(2.25px 2.25px 0 #00000020);
+}
+
+.block {
+    float: left;
+    padding-top: 10vh;
+}
+
+.text {
+    float: right;
+}
+
+.btn {
+    background-color: #A8FF92;
+    border: 2px solid;
+    width: 100px;
+    height: 55px;
+    font-size: 20px;
+    filter: drop-shadow(1.85px 1.85px 0 #00000020);
 }
