@@ -3,6 +3,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     overflow: hidden;
+    align-items: center;
 }
 
 .text h1 {
@@ -12,27 +13,47 @@ body {
 
 .text p {
     font-family: 'Arial';
-    width: 250px;
+    width: 325px;
+    filter: drop-shadow(1.15px 1.15px 0 #00000020);
 }
 
 .img {
     filter: drop-shadow(2.25px 2.25px 0 #00000020);
+    width: 300px;
 }
 
 .block {
     float: left;
-    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 .text {
     float: right;
 }
 
+.btn-link {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.12s ease;
+}
+
+.btn-link:hover .btn {
+    transform: scale(1.04);
+    
+}
+
+.btn-link:active .btn {
+    transform: scale(0.96);
+}
+
 .btn {
-    background-color: #A8FF92;
-    border: 2px solid;
-    width: 90px;
-    height: 55px;
-    font-size: 17px;
-    filter: drop-shadow(1.85px 1.85px 0 #00000020);
+    border: 1px solid;
+    display: block;
+    width: 150px;
+    height: 50px;
+    object-fit: contain;
+    filter: drop-shadow(3px 3px 0 #00000020);
+}
+
+a {text-decoration: none;
 }
